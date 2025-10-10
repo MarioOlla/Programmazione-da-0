@@ -1,20 +1,16 @@
 package it.corso.oggetti;
 
-import it.corso.oggetti.automobile.Auto;
-
 public class App {
 
 	public static void main(String[] args) {
 		
-		Auto auto = new Auto("DD202DH", 3);
-
-		System.out.println(auto);
+		ClassePadre padre = new ClassePadre();
+		padre = new ClasseFiglia(13,"lallero");
 		
-		Auto veicolo = new Auto("DD202DH", 3);
 		
-		System.out.println(veicolo);
+//		System.out.println("Ho istanziato classe padre e classe figlia.");
 		
-		System.out.println(auto.equals(veicolo));
+		((ClasseFiglia)padre).getPropFiglia();
 	}
 
 }
